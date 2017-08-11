@@ -14,7 +14,7 @@ def remove_punctuation(text):
 	return ''.join([ch for ch in text if ch not in exclude])
 
 def get_namedentities(text):
-	st = StanfordNERTagger('/home/sagarwal/phishing detection/keyword_extraction/dataset/english.conll.4class.caseless.distsim.crf.ser.gz','/home/sagarwal/phishing detection/keyword_extraction/dataset/stanford-ner.jar')
+	st = StanfordNERTagger('')
 	ner_tagged = st.tag(text.lower().split())
 	named_entities = []
 	if len(ner_tagged) > 0:

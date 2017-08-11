@@ -1,8 +1,8 @@
 from googleapiclient.discovery import build
 import pprint
 
-my_api_key = "AIzaSyBbRo__OeXIcxBo1329fu3-lj1UhHhjyKo"
-my_cse_id = "014113642853987699976:f_egv3a8x6a"
+my_api_key = 
+my_cse_id = 
 
 def google_search(search_term, api_key, cse_id, **kwargs):
     ans = []
